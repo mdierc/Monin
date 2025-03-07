@@ -1,0 +1,26 @@
+{
+	
+    "servers": [
+	
+      {
+		  
+        "server_name": "BRZ7JX3",
+        "customer_name": "PX",
+        "host": "BRZ7JX3",
+        "port": 1433,
+        "username": "",
+        "password": "",
+        "integratedSecurity": true,
+	"windowsAuth": true,
+        "options": {
+			"encrypt": true,
+			"trustServerCertificate": true,
+			"connectionTimeout": 30,
+			"maxPoolSize": 100
+        }
+		
+      }
+	  
+    ]
+	
+}
