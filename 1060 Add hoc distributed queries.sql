@@ -1,0 +1,1 @@
+exec sp_configure 'Ad Hoc Distributed Queries'
