@@ -1,0 +1,18 @@
+{
+    "script_name": "080 Check TempDB configuration.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-02",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "NumberOfCPUs": 32,
+            "NumberOfFiles": 8,
+            "SuggestedNumberOfFiles": 8,
+            "FilesEqualSize": "YES",
+            "FilesEqualMaxSize": "YES",
+            "FilesEqualGrowth": "YES"
+        }
+    ],
+    "error": null
+}

@@ -1,0 +1,14 @@
+{
+    "script_name": "030 Check Instant File Initialisation.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "service_account": "AZSTDIMPNA\\Serv_SQLOazis",
+            "IFI enabled": "Y"
+        }
+    ],
+    "error": null
+}

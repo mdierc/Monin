@@ -1,0 +1,14 @@
+{
+    "script_name": "030 Check Instant File Initialisation.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-02",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "service_account": "AZSTDIMPNA\\gMSAsqlclus$",
+            "IFI enabled": "Y"
+        }
+    ],
+    "error": null
+}

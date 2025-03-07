@@ -1,0 +1,162 @@
+{
+    "script_name": "050 Check percentual growth.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-02",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "DbaUtility",
+            "Logical Name": "DbaUtility",
+            "File Type": "ROWS",
+            "Path": "H:\\DataDb\\DbaUtility.mdf",
+            "Is Percent Growth": false,
+            "Growth": 64
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "DbaUtility",
+            "Logical Name": "DbaUtility_log",
+            "File Type": "LOG",
+            "Path": "F:\\LogDb\\DbaUtility_log.ldf",
+            "Is Percent Growth": false,
+            "Growth": 64
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "master",
+            "Logical Name": "master",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL16.MSSQLSERVER\\MSSQL\\DATA\\master.mdf",
+            "Is Percent Growth": true,
+            "Growth": 10
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "master",
+            "Logical Name": "mastlog",
+            "File Type": "LOG",
+            "Path": "D:\\MSSQL16.MSSQLSERVER\\MSSQL\\DATA\\mastlog.ldf",
+            "Is Percent Growth": true,
+            "Growth": 10
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "model",
+            "Logical Name": "modeldev",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL16.MSSQLSERVER\\MSSQL\\DATA\\model.mdf",
+            "Is Percent Growth": false,
+            "Growth": 64
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "model",
+            "Logical Name": "modellog",
+            "File Type": "LOG",
+            "Path": "D:\\MSSQL16.MSSQLSERVER\\MSSQL\\DATA\\modellog.ldf",
+            "Is Percent Growth": false,
+            "Growth": 64
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "msdb",
+            "Logical Name": "MSDBData",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL16.MSSQLSERVER\\MSSQL\\DATA\\MSDBData.mdf",
+            "Is Percent Growth": true,
+            "Growth": 10
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "msdb",
+            "Logical Name": "MSDBLog",
+            "File Type": "LOG",
+            "Path": "D:\\MSSQL16.MSSQLSERVER\\MSSQL\\DATA\\MSDBLog.ldf",
+            "Is Percent Growth": true,
+            "Growth": 10
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp2",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDb\\tempdb_mssql_2.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp3",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDb\\tempdb_mssql_3.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp4",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDb\\tempdb_mssql_4.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp5",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDb\\tempdb_mssql_5.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp6",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDb\\tempdb_mssql_6.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp7",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDb\\tempdb_mssql_7.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp8",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDb\\tempdb_mssql_8.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "tempdev",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDb\\tempdb.mdf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "templog",
+            "File Type": "LOG",
+            "Path": "T:\\TempDb\\templog.ldf",
+            "Is Percent Growth": false,
+            "Growth": 64
+        }
+    ],
+    "error": null
+}

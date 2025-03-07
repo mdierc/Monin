@@ -1,0 +1,8 @@
+{
+    "script_name": "invalid-logins.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-02",
+    "success": true,
+    "rows": [],
+    "error": null
+}

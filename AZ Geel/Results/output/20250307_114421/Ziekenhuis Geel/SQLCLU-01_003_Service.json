@@ -1,0 +1,45 @@
+{
+    "script_name": "003 Service.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-01",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "servicename": "SQL Server (MSSQLSERVER)",
+            "process_id": 9072,
+            "startup_type_desc": "Automatic",
+            "status_desc": "Running",
+            "last_startup_time": "2025-02-23 08:13:42.363000",
+            "service_account": "AZSTDIMPNA\\gMSAsqlclus$",
+            "is_clustered": "N",
+            "cluster_nodename": null,
+            "filename": "\"C:\\Program Files\\Microsoft SQL Server\\MSSQL16.MSSQLSERVER\\MSSQL\\Binn\\sqlservr.exe\" -sMSSQLSERVER"
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "servicename": "SQL Server Agent (MSSQLSERVER)",
+            "process_id": 8512,
+            "startup_type_desc": "Automatic",
+            "status_desc": "Running",
+            "last_startup_time": null,
+            "service_account": "AZSTDIMPNA\\gMSAsqlclus$",
+            "is_clustered": "N",
+            "cluster_nodename": null,
+            "filename": "\"C:\\Program Files\\Microsoft SQL Server\\MSSQL16.MSSQLSERVER\\MSSQL\\Binn\\SQLAGENT.EXE\" -i MSSQLSERVER"
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "servicename": "SQL Full-text Filter Daemon Launcher (MSSQLSERVER)",
+            "process_id": 3048,
+            "startup_type_desc": "Manual",
+            "status_desc": "Running",
+            "last_startup_time": null,
+            "service_account": "NT Service\\MSSQLFDLauncher",
+            "is_clustered": "N",
+            "cluster_nodename": null,
+            "filename": "\"C:\\Program Files\\Microsoft SQL Server\\MSSQL16.MSSQLSERVER\\MSSQL\\Binn\\fdlauncher.exe\" -s MSSQL16.MSSQLSERVER"
+        }
+    ],
+    "error": null
+}

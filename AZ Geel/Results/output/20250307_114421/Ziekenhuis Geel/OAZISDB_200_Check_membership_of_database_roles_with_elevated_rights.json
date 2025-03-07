@@ -1,0 +1,137 @@
+{
+    "script_name": "200 Check membership of database roles with elevated rights.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "Account": "AZSTDIMPNA\\karlh",
+            "Login": "AZSTDIMPNA\\karlh",
+            "Type": "WINDOWS_USER",
+            "Member of": "db_owner"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "Account": "HHMOL\\G_Oazis_Admins_Mol",
+            "Login": "HHMOL\\G_Oazis_Admins_Mol",
+            "Type": "WINDOWS_GROUP",
+            "Member of": "db_owner"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "Account": "XTENSO\\smetpa",
+            "Login": null,
+            "Type": "WINDOWS_USER",
+            "Member of": "db_accessadmin"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "Account": "XTENSO\\smetpa",
+            "Login": null,
+            "Type": "WINDOWS_USER",
+            "Member of": "db_backupoperator"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "Account": "XTENSO\\smetpa",
+            "Login": null,
+            "Type": "WINDOWS_USER",
+            "Member of": "db_ddladmin"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "Account": "XTENSO\\smetpa",
+            "Login": null,
+            "Type": "WINDOWS_USER",
+            "Member of": "db_owner"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "Account": "XTENSO\\smetpa",
+            "Login": null,
+            "Type": "WINDOWS_USER",
+            "Member of": "db_securityadmin"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Account": "AZSTDIMPNA\\karlh",
+            "Login": "AZSTDIMPNA\\karlh",
+            "Type": "WINDOWS_USER",
+            "Member of": "db_accessadmin"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Account": "AZSTDIMPNA\\karlh",
+            "Login": "AZSTDIMPNA\\karlh",
+            "Type": "WINDOWS_USER",
+            "Member of": "db_backupoperator"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Account": "AZSTDIMPNA\\karlh",
+            "Login": "AZSTDIMPNA\\karlh",
+            "Type": "WINDOWS_USER",
+            "Member of": "db_owner"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Account": "AZSTDIMPNA\\karlh",
+            "Login": "AZSTDIMPNA\\karlh",
+            "Type": "WINDOWS_USER",
+            "Member of": "db_securityadmin"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Account": "AZSTDIMPNA\\xtenso",
+            "Login": "AZSTDIMPNA\\xtenso",
+            "Type": "WINDOWS_USER",
+            "Member of": "db_accessadmin"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Account": "AZSTDIMPNA\\xtenso",
+            "Login": "AZSTDIMPNA\\xtenso",
+            "Type": "WINDOWS_USER",
+            "Member of": "db_backupoperator"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Account": "AZSTDIMPNA\\xtenso",
+            "Login": "AZSTDIMPNA\\xtenso",
+            "Type": "WINDOWS_USER",
+            "Member of": "db_ddladmin"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Account": "AZSTDIMPNA\\xtenso",
+            "Login": "AZSTDIMPNA\\xtenso",
+            "Type": "WINDOWS_USER",
+            "Member of": "db_owner"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Account": "AZSTDIMPNA\\xtenso",
+            "Login": "AZSTDIMPNA\\xtenso",
+            "Type": "WINDOWS_USER",
+            "Member of": "db_securityadmin"
+        }
+    ],
+    "error": null
+}

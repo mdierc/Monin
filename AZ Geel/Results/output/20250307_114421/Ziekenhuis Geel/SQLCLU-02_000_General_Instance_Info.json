@@ -1,0 +1,18 @@
+{
+    "script_name": "000 General Instance Info.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-02",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-02",
+            "InstanceName": "MSSQLSERVER",
+            "Edition": "Enterprise Edition: Core-based Licensing (64-bit)",
+            "DatabaseEngineEdition": "3",
+            "InstanceStartTime": "2025-02-14 09:20:13.423000",
+            "VirtualMachine": "NONE",
+            "CountDatabasesAndSize": "8 databases, 9871.44 GB total file size"
+        }
+    ],
+    "error": null
+}

@@ -1,0 +1,8 @@
+{
+    "script_name": "210 Check if db_owner is sa.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-02",
+    "success": true,
+    "rows": [],
+    "error": null
+}

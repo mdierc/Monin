@@ -1,0 +1,57 @@
+{
+    "script_name": "200 Check membership of database roles with elevated rights.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-01",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_AUDITLOG",
+            "Account": "CSSchil",
+            "Login": null,
+            "Type": "APPLICATION_ROLE",
+            "Member of": "db_owner"
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_ENVSETTINGS",
+            "Account": "CSSchil",
+            "Login": null,
+            "Type": "APPLICATION_ROLE",
+            "Member of": "db_owner"
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD",
+            "Account": "AZSTDIMPNA\\_grpChipsoftAdmin",
+            "Login": "AZSTDIMPNA\\_grpChipsoftAdmin",
+            "Type": "WINDOWS_GROUP",
+            "Member of": "db_owner"
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD",
+            "Account": "CSSchil",
+            "Login": null,
+            "Type": "APPLICATION_ROLE",
+            "Member of": "db_owner"
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD_MM",
+            "Account": "CSSchil",
+            "Login": null,
+            "Type": "APPLICATION_ROLE",
+            "Member of": "db_owner"
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD_UXIPLOG",
+            "Account": "CSSchil",
+            "Login": null,
+            "Type": "APPLICATION_ROLE",
+            "Member of": "db_owner"
+        }
+    ],
+    "error": null
+}

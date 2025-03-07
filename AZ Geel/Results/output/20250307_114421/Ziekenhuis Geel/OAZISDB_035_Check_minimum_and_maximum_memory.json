@@ -1,0 +1,20 @@
+{
+    "script_name": "035 Check minimum and maximum memory.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Total memory": 64,
+            "Instances": 1,
+            "Rec. OS": 10,
+            "Minimum memory": 10,
+            "Maximum memory": 56,
+            "Rec. Min": 13,
+            "Rec. Max": 54,
+            "Edition": "Standard Edition (64-bit)"
+        }
+    ],
+    "error": null
+}

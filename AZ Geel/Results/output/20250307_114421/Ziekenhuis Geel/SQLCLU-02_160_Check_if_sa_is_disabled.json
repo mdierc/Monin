@@ -1,0 +1,13 @@
+{
+    "script_name": "160 Check if sa is disabled.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-02",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Disabled": true
+        }
+    ],
+    "error": null
+}

@@ -1,0 +1,74 @@
+{
+    "script_name": "070 Check the number of virtual logs.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-01",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "AG_HIX_master",
+            "VLF Count": 4
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "AG_HIX_msdb",
+            "VLF Count": 63
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "BackupFoundation",
+            "VLF Count": 5
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "DbaUtility",
+            "VLF Count": 8
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_AUDITLOG",
+            "VLF Count": 29
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_ENVSETTINGS",
+            "VLF Count": 8
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD",
+            "VLF Count": 130
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD_MM",
+            "VLF Count": 32
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD_UXIPLOG",
+            "VLF Count": 127
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "master",
+            "VLF Count": 5
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "model",
+            "VLF Count": 4
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "msdb",
+            "VLF Count": 30
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "VLF Count": 16
+        }
+    ],
+    "error": null
+}

@@ -1,0 +1,21 @@
+{
+    "script_name": "150 Check databases where autogrowth is not enabled.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-02",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "DbaUtility",
+            "logical_name": "DbaUtility",
+            "growth": 8192
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Database Name": "DbaUtility",
+            "logical_name": "DbaUtility_log",
+            "growth": 8192
+        }
+    ],
+    "error": null
+}

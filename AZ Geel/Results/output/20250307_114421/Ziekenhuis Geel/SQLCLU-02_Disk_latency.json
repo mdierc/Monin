@@ -1,0 +1,64 @@
+{
+    "script_name": "Disk latency.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-02",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Drive": "M:",
+            "Volume Mount Point": "M:\\",
+            "Read Latency": 0,
+            "Write Latency": 0,
+            "Overall Latency": 0,
+            "Avg Bytes/Read": 63213,
+            "Avg Bytes/Write": 4434,
+            "Avg Bytes/Transfer": 4809
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Drive": "D:",
+            "Volume Mount Point": "D:\\",
+            "Read Latency": 1,
+            "Write Latency": 0,
+            "Overall Latency": 0,
+            "Avg Bytes/Read": 182234,
+            "Avg Bytes/Write": 2873,
+            "Avg Bytes/Transfer": 4386
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Drive": "T:",
+            "Volume Mount Point": "T:\\",
+            "Read Latency": 0,
+            "Write Latency": 0,
+            "Overall Latency": 0,
+            "Avg Bytes/Read": 65211,
+            "Avg Bytes/Write": 64918,
+            "Avg Bytes/Transfer": 65048
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Drive": "F:",
+            "Volume Mount Point": "F:\\",
+            "Read Latency": 0,
+            "Write Latency": 0,
+            "Overall Latency": 0,
+            "Avg Bytes/Read": 189564,
+            "Avg Bytes/Write": 6367,
+            "Avg Bytes/Transfer": 6369
+        },
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Drive": "H:",
+            "Volume Mount Point": "H:\\",
+            "Read Latency": 1,
+            "Write Latency": 96,
+            "Overall Latency": 88,
+            "Avg Bytes/Read": 65705,
+            "Avg Bytes/Write": 22208,
+            "Avg Bytes/Transfer": 25673
+        }
+    ],
+    "error": null
+}

@@ -1,0 +1,252 @@
+{
+    "script_name": "050 Check percentual growth.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "master",
+            "Logical Name": "master",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\master.mdf",
+            "Is Percent Growth": false,
+            "Growth": 10
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "master",
+            "Logical Name": "mastlog",
+            "File Type": "LOG",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\mastlog.ldf",
+            "Is Percent Growth": false,
+            "Growth": 10
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "model",
+            "Logical Name": "modeldev",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\model.mdf",
+            "Is Percent Growth": false,
+            "Growth": 64
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "model",
+            "Logical Name": "modellog",
+            "File Type": "LOG",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\modellog.ldf",
+            "Is Percent Growth": false,
+            "Growth": 64
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "msdb",
+            "Logical Name": "MSDBData",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\MSDBData.mdf",
+            "Is Percent Growth": false,
+            "Growth": 10
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "msdb",
+            "Logical Name": "MSDBLog",
+            "File Type": "LOG",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\MSDBLog.ldf",
+            "Is Percent Growth": false,
+            "Growth": 10
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "Logical Name": "OAZPMOL_Data",
+            "File Type": "ROWS",
+            "Path": "H:\\DATA\\OAZMOLP.MDF",
+            "Is Percent Growth": false,
+            "Growth": 512
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "Logical Name": "OAZPMOL_Log",
+            "File Type": "LOG",
+            "Path": "I:\\Data\\OAZMOLP_log.ldf",
+            "Is Percent Growth": false,
+            "Growth": 512
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Logical Name": "Oazis_Data",
+            "File Type": "ROWS",
+            "Path": "H:\\Data\\OAZP.MDF",
+            "Is Percent Growth": false,
+            "Growth": 1024
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Logical Name": "Oazis_Data2",
+            "File Type": "ROWS",
+            "Path": "H:\\Data\\OAZP2.NDF",
+            "Is Percent Growth": false,
+            "Growth": 1024
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Logical Name": "Oazis_Log",
+            "File Type": "LOG",
+            "Path": "I:\\Data\\OAZP.LDF",
+            "Is Percent Growth": false,
+            "Growth": 1024
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Logical Name": "Oazis_Log2",
+            "File Type": "LOG",
+            "Path": "H:\\Data\\OAZP.LDF",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp2",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\tempdb_mssql_2.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp3",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\tempdb_mssql_3.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp4",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\tempdb_mssql_4.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp5",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\tempdb_mssql_5.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp6",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\tempdb_mssql_6.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp7",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\tempdb_mssql_7.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "temp8",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\tempdb_mssql_8.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "tempdb1",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDB\\tempdb1.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "tempdb2",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDB\\tempdb2.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "tempdb3",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDB\\tempdb3.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "tempdb4",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDB\\tempdb4.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "tempdb5",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDB\\tempdb5.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "tempdb6",
+            "File Type": "ROWS",
+            "Path": "T:\\TempDB\\tempdb6.ndf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "tempdev",
+            "File Type": "ROWS",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\tempdb.mdf",
+            "Is Percent Growth": false,
+            "Growth": 0
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "Logical Name": "templog",
+            "File Type": "LOG",
+            "Path": "D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\templog.ldf",
+            "Is Percent Growth": false,
+            "Growth": 64
+        }
+    ],
+    "error": null
+}

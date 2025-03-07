@@ -1,0 +1,123 @@
+{
+    "script_name": "150 Check databases where autogrowth is not enabled.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-01",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "AG_HIX_master",
+            "logical_name": "AG_HIX_master",
+            "growth": 10
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "AG_HIX_master",
+            "logical_name": "AG_HIX_masterlog",
+            "growth": 10
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "AG_HIX_msdb",
+            "logical_name": "AG_HIX_msdb",
+            "growth": 10
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "AG_HIX_msdb",
+            "logical_name": "AG_HIX_msdblog",
+            "growth": 10
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "BackupFoundation",
+            "logical_name": "BackupFoundation",
+            "growth": 12800
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "BackupFoundation",
+            "logical_name": "BackupFoundation_log",
+            "growth": 7680
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "DbaUtility",
+            "logical_name": "DbaUtility",
+            "growth": 8192
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "DbaUtility",
+            "logical_name": "DbaUtility_log",
+            "growth": 8192
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_AUDITLOG",
+            "logical_name": "HiX_AUDITLOG_data",
+            "growth": 1310720
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_AUDITLOG",
+            "logical_name": "HiX_AUDITLOG_log",
+            "growth": 655360
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_ENVSETTINGS",
+            "logical_name": "HiX_ENVSETTINGS_data",
+            "growth": 64000
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_ENVSETTINGS",
+            "logical_name": "HiX_ENVSETTINGS_log",
+            "growth": 6400
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD",
+            "logical_name": "HiX_PROD_data",
+            "growth": 0
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD",
+            "logical_name": "HiX_PROD_data2",
+            "growth": 1048576
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD",
+            "logical_name": "HiX_PROD_log",
+            "growth": 1048576
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD_MM",
+            "logical_name": "HiX_PROD_MM_data",
+            "growth": 131072
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD_MM",
+            "logical_name": "HiX_PROD_MM_log",
+            "growth": 131072
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD_UXIPLOG",
+            "logical_name": "HiX_PROD_UXIPLOG_data",
+            "growth": 1310720
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Database Name": "HiX_PROD_UXIPLOG",
+            "logical_name": "HiX_PROD_UXIPLOG_log",
+            "growth": 655360
+        }
+    ],
+    "error": null
+}

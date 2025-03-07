@@ -1,0 +1,39 @@
+{
+    "script_name": "070 Check the number of virtual logs.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "master",
+            "VLF Count": 8
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "model",
+            "VLF Count": 10
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "msdb",
+            "VLF Count": 33
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "VLF Count": 71
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "VLF Count": 366
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "tempdb",
+            "VLF Count": 38
+        }
+    ],
+    "error": null
+}

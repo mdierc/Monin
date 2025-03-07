@@ -1,0 +1,45 @@
+{
+    "script_name": "150 Check databases where autogrowth is not enabled.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "logical_name": "OAZPMOL_Data",
+            "growth": 65536
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "logical_name": "OAZPMOL_Log",
+            "growth": 65536
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "logical_name": "Oazis_Data",
+            "growth": 131072
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "logical_name": "Oazis_Data2",
+            "growth": 131072
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "logical_name": "Oazis_Log",
+            "growth": 131072
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "logical_name": "Oazis_Log2",
+            "growth": 0
+        }
+    ],
+    "error": null
+}

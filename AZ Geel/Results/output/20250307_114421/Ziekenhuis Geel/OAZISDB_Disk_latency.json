@@ -1,0 +1,53 @@
+{
+    "script_name": "Disk latency.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Drive": "I:",
+            "Volume Mount Point": "I:\\",
+            "Read Latency": 2,
+            "Write Latency": 1,
+            "Overall Latency": 1,
+            "Avg Bytes/Read": 1042545,
+            "Avg Bytes/Write": 28067,
+            "Avg Bytes/Transfer": 54693
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Drive": "D:",
+            "Volume Mount Point": "D:\\",
+            "Read Latency": 0,
+            "Write Latency": 2,
+            "Overall Latency": 1,
+            "Avg Bytes/Read": 49976,
+            "Avg Bytes/Write": 42531,
+            "Avg Bytes/Transfer": 43319
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Drive": "T:",
+            "Volume Mount Point": "T:\\",
+            "Read Latency": 0,
+            "Write Latency": 2,
+            "Overall Latency": 1,
+            "Avg Bytes/Read": 61611,
+            "Avg Bytes/Write": 63641,
+            "Avg Bytes/Transfer": 62613
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Drive": "H:",
+            "Volume Mount Point": "H:\\",
+            "Read Latency": 1,
+            "Write Latency": 32,
+            "Overall Latency": 6,
+            "Avg Bytes/Read": 115904,
+            "Avg Bytes/Write": 22450,
+            "Avg Bytes/Transfer": 101314
+        }
+    ],
+    "error": null
+}

@@ -1,0 +1,21 @@
+{
+    "script_name": "210 Check if db_owner is sa.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZMOLP",
+            "Owner": "AZSTDIMPNA\\operator",
+            "AlterScript": "ALTER AUTHORIZATION ON database::[OAZMOLP] TO sa;"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Database Name": "OAZP",
+            "Owner": "AZSTDIMPNA\\operator",
+            "AlterScript": "ALTER AUTHORIZATION ON database::[OAZP] TO sa;"
+        }
+    ],
+    "error": null
+}

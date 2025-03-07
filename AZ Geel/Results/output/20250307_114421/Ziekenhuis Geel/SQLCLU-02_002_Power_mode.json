@@ -1,0 +1,13 @@
+{
+    "script_name": "002 Power mode.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-02",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-02\\MSSQLSERVER",
+            "Power Scheme": "High performance power mode"
+        }
+    ],
+    "error": null
+}

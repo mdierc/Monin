@@ -1,0 +1,33 @@
+{
+    "script_name": "003 Service.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "servicename": "SQL Server (MSSQLSERVER)",
+            "process_id": 4384,
+            "startup_type_desc": "Automatic",
+            "status_desc": "Running",
+            "last_startup_time": "2025-02-23 08:08:36.910000",
+            "service_account": "AZSTDIMPNA\\Serv_SQLOazis",
+            "is_clustered": "N",
+            "cluster_nodename": null,
+            "filename": "\"D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\Binn\\sqlservr.exe\" -sMSSQLSERVER"
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "servicename": "SQL Server Agent (MSSQLSERVER)",
+            "process_id": 6284,
+            "startup_type_desc": "Automatic",
+            "status_desc": "Running",
+            "last_startup_time": null,
+            "service_account": "LocalSystem",
+            "is_clustered": "N",
+            "cluster_nodename": null,
+            "filename": "\"D:\\MSSQL\\MSSQL14.MSSQLSERVER\\MSSQL\\Binn\\SQLAGENT.EXE\" -i MSSQLSERVER"
+        }
+    ],
+    "error": null
+}

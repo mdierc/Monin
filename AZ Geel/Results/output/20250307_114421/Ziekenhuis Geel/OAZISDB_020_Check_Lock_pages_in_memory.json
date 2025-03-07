@@ -1,0 +1,16 @@
+{
+    "script_name": "020 Check Lock pages in memory.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Service account": "AZSTDIMPNA\\Serv_SQLOazis",
+            "Lock pages in memory": "Y",
+            "Error17890Occurred": false,
+            "MultipleInstancesInstalled": "N"
+        }
+    ],
+    "error": null
+}

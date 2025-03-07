@@ -1,0 +1,93 @@
+{
+    "script_name": "190 Check system role membership.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "nagios",
+            "System role": "serveradmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "AZSTDIMPNA\\acc",
+            "System role": "sysadmin",
+            "IsDisabled": true
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "AZSTDIMPNA\\DA_Axians",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "AZSTDIMPNA\\Domain Admins",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "AZSTDIMPNA\\karlh",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "AZSTDIMPNA\\monin",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "AZSTDIMPNA\\operator",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "AZSTDIMPNA\\ServerAdmin",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "AZSTDIMPNA\\xtenso",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "DBMarlin",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "HHMOL\\G_Oazis_Admins_Mol",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "nagios",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "OAZISDB\\Administrator",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Login": "SQL_HixOazisVAL",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        }
+    ],
+    "error": null
+}

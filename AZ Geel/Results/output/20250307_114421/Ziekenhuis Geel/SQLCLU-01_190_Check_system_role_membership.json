@@ -1,0 +1,39 @@
+{
+    "script_name": "190 Check system role membership.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-01",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Login": "NT AUTHORITY\\SYSTEM",
+            "System role": "SQLArcExtensionServerRole",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Login": "AZSTDIMPNA\\_grpChipsoftAdmin",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Login": "AZSTDIMPNA\\Domain Admins",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Login": "AZSTDIMPNA\\monin",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        },
+        {
+            "Server Name": "SQLCLU-01\\MSSQLSERVER",
+            "Login": "AZSTDIMPNA\\ServerAdmin",
+            "System role": "sysadmin",
+            "IsDisabled": false
+        }
+    ],
+    "error": null
+}

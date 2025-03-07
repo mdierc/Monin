@@ -1,0 +1,14 @@
+{
+    "script_name": "180 Check sp_configure.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB\\MSSQLSERVER",
+            "Show advanced options": 0,
+            "xp_cmdshell": 0
+        }
+    ],
+    "error": null
+}

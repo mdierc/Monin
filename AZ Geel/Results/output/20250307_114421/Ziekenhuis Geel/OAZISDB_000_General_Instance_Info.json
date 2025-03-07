@@ -1,0 +1,18 @@
+{
+    "script_name": "000 General Instance Info.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "OAZISDB",
+    "success": true,
+    "rows": [
+        {
+            "Server Name": "OAZISDB",
+            "InstanceName": "MSSQLSERVER",
+            "Edition": "Standard Edition (64-bit)",
+            "DatabaseEngineEdition": "2",
+            "InstanceStartTime": "2025-02-23 08:08:39.833000",
+            "VirtualMachine": "HYPERVISOR",
+            "CountDatabasesAndSize": "2 databases, 1777.85 GB total file size"
+        }
+    ],
+    "error": null
+}

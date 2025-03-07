@@ -1,0 +1,8 @@
+{
+    "script_name": "200 Check membership of database roles with elevated rights.sql",
+    "customer_name": "Ziekenhuis Geel",
+    "server_name": "SQLCLU-02",
+    "success": true,
+    "rows": [],
+    "error": null
+}
