@@ -1,0 +1,62 @@
+{
+	
+    "servers": [
+	
+      {
+		  
+        "server_name": "OAZISDB",
+        "customer_name": "Ziekenhuis Geel",
+        "host": "OAZISDB",
+        "port": 1433,
+        "username": "",
+        "password": "",
+        "integratedSecurity": true,
+	"windowsAuth": true,
+        "options": {
+			"encrypt": true,
+			"trustServerCertificate": true,
+			"connectionTimeout": 30,
+			"maxPoolSize": 100
+        }
+		
+      },
+	 
+{
+		  
+        "server_name": "SQLCLU-01",
+        "customer_name": "Ziekenhuis Geel",
+        "host": "SQLCLU-01",
+        "port": 1433,
+        "username": "",
+        "password": "",
+        "integratedSecurity": true,
+	"windowsAuth": true,
+        "options": {
+			"encrypt": true,
+			"trustServerCertificate": true,
+			"connectionTimeout": 30,
+			"maxPoolSize": 100
+        }
+		
+      },
+{
+		  
+        "server_name": "SQLCLU-02",
+        "customer_name": "Ziekenhuis Geel",
+        "host": "SQLCLU-02",
+        "port": 1433,
+        "username": "",
+        "password": "",
+        "integratedSecurity": true,
+	"windowsAuth": true,
+        "options": {
+			"encrypt": true,
+			"trustServerCertificate": true,
+			"connectionTimeout": 30,
+			"maxPoolSize": 100
+        }
+		
+      } 
+    ]
+	
+}
