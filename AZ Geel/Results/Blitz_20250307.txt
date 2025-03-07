@@ -1,0 +1,255 @@
+Server Name	Priority	FindingsGroup	Finding	DatabaseName	URL	Details	QueryPlan	QueryPlanFiltered	CheckID
+OAZISDB	0	sp_Blitz Dec 28 2024 12:00AM	SQL Server First Responder Kit	NULL	http://FirstResponderKit.org/	To get help or add your own contributions, join us at http://FirstResponderKit.org.	NULL	NULL	-1
+OAZISDB	1	Backup	Backups Not Performed Recently	DbaUtility	https://www.brentozar.com/go/nobak	Last backed up: never	NULL	NULL	1
+OAZISDB	1	Backup	Full Recovery Model w/o Log Backups	DbaUtility	https://www.brentozar.com/go/biglogs	The 128.00MB log file has not been backed up in the last week.	NULL	NULL	2
+OAZISDB	1	Security	Dangerous Service Account	NULL	https://vladdba.com/SQLServerSvcAccount	SQL Server Agent's service account is LocalSystem - meaning that anyone who can create and run jobs can do absolutely anything on the host.	NULL	NULL	259
+OAZISDB	50	Performance	Recovery Interval Not Optimal	OAZMOLP	https://sqlperformance.com/2020/05/system-configuration/0-to-60-switching-to-indirect-checkpoints	The database [OAZMOLP] has a target recovery interval of 0, which is a legacy default, and should be changed to 60.	NULL	NULL	257
+OAZISDB	50	Performance	Recovery Interval Not Optimal	OAZP	https://sqlperformance.com/2020/05/system-configuration/0-to-60-switching-to-indirect-checkpoints	The database [OAZP] has a target recovery interval of 0, which is a legacy default, and should be changed to 60.	NULL	NULL	257
+OAZISDB	100	Performance	Many Plans for One Query	NULL	https://www.brentozar.com/go/parameterization	18101 plans are present for a single query in the plan cache - meaning we probably have parameterization issues.	NULL	NULL	160
+OAZISDB	110	Performance	Auto-Create Stats Disabled	OAZMOLP	https://www.brentozar.com/go/acs	Database [OAZMOLP] has auto-create-stats disabled.  SQL Server uses statistics to build better execution plans, and without the ability to automatically create more, performance may suffer.	NULL	NULL	15
+OAZISDB	110	Performance	Auto-Create Stats Disabled	OAZP	https://www.brentozar.com/go/acs	Database [OAZP] has auto-create-stats disabled.  SQL Server uses statistics to build better execution plans, and without the ability to automatically create more, performance may suffer.	NULL	NULL	15
+OAZISDB	170	File Configuration	TempDB Unevenly Sized Data Files	tempdb	https://www.brentozar.com/go/tempdb	TempDB data files are not configured with the same size.  Unevenly sized tempdb data files will result in unevenly sized workloads.	NULL	NULL	183
+OAZISDB	170	Reliability	Remote DAC Disabled	NULL	https://www.brentozar.com/go/dac	Remote access to the Dedicated Admin Connection (DAC) is not enabled. The DAC can make remote troubleshooting much easier when SQL Server is unresponsive.	NULL	NULL	100
+OAZISDB	200	Informational	Agent Jobs Starting Simultaneously	NULL	https://www.brentozar.com/go/busyagent/	Multiple SQL Server Agent jobs are configured to start simultaneously. For detailed schedule listings, see the query in the URL.	NULL	NULL	123
+OAZISDB	200	Informational	Collation is SQL_Latin1_General_CP1_CI_AS	OAZMOLP	https://www.brentozar.com/go/collate	Collation differences between user databases and tempdb can cause conflicts especially when comparing string values	NULL	NULL	76
+OAZISDB	200	Informational	Collation is SQL_Latin1_General_CP1_CI_AS	OAZP	https://www.brentozar.com/go/collate	Collation differences between user databases and tempdb can cause conflicts especially when comparing string values	NULL	NULL	76
+OAZISDB	200	Informational	Tables in the MSDB Database	msdb	https://www.brentozar.com/go/msdbuser	The arcJobTriggers00 table in the msdb database was created by end users on Feb  3 2024 10:34AM. Tables in the msdb database may not be restored in the event of a disaster.	NULL	NULL	28
+OAZISDB	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job DatabaseBackup - SYSTEM_DATABASES - FULL has not been set up to notify an operator if it fails.	NULL	NULL	94
+OAZISDB	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job DatabaseBackup - USER_DATABASES - DIFF has not been set up to notify an operator if it fails.	NULL	NULL	94
+OAZISDB	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job DatabaseBackup - USER_DATABASES - FULL has not been set up to notify an operator if it fails.	NULL	NULL	94
+OAZISDB	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job DatabaseBackup - USER_DATABASES - LOG has not been set up to notify an operator if it fails.	NULL	NULL	94
+OAZISDB	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job IndexOptimize - USER_DATABASES has not been set up to notify an operator if it fails.	NULL	NULL	94
+OAZISDB	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job LSAlert_OAZISDB has not been set up to notify an operator if it fails.	NULL	NULL	94
+OAZISDB	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job Route REVA has not been set up to notify an operator if it fails.	NULL	NULL	94
+OAZISDB	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job Vrijgeven 1957 ECS20 has not been set up to notify an operator if it fails.	NULL	NULL	94
+OAZISDB	200	Monitoring	Alerts Configured without Follow Up	NULL	https://www.brentozar.com/go/alert	SQL Server Agent alerts have been configured but they either do not notify anyone or else they do not take any action.  This is a free, easy way to get notified of corruption, job failures, or major outages even before monitoring systems pick it up.	NULL	NULL	59
+OAZISDB	200	Monitoring	No Alerts for Corruption	NULL	https://www.brentozar.com/go/alert	SQL Server Agent alerts do not exist for errors 823, 824, and 825.  These three errors can give you notification about early hardware failure. Enabling them can prevent you a lot of heartbreak.	NULL	NULL	96
+OAZISDB	200	Monitoring	No Alerts for Sev 19-25	NULL	https://www.brentozar.com/go/alert	SQL Server Agent alerts do not exist for severity levels 19 through 25.  These are some very severe SQL Server errors. Knowing that these are happening may let you recover from errors faster.	NULL	NULL	61
+OAZISDB	200	Monitoring	Not All Alerts Configured	NULL	https://www.brentozar.com/go/alert	Not all SQL Server Agent alerts have been configured.  This is a free, easy way to get notified of corruption, job failures, or major outages even before monitoring systems pick it up.	NULL	NULL	30
+OAZISDB	200	Non-Default Server Config	Agent XPs	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1071
+OAZISDB	200	Non-Default Server Config	backup compression default	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1073
+OAZISDB	200	Non-Default Server Config	Database Mail XPs	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1072
+OAZISDB	200	Non-Default Server Config	max server memory (MB)	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 2147483647 and it has been set to 57344.	NULL	NULL	1031
+OAZISDB	200	Non-Default Server Config	min server memory (MB)	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 10240.	NULL	NULL	1036
+OAZISDB	200	Performance	cost threshold for parallelism	NULL	https://www.brentozar.com/go/cxpacket	Set to 5, its default value. Changing this sp_configure setting may reduce CXPACKET waits.	NULL	NULL	188
+OAZISDB	200	Performance	Snapshot Backups Occurring	NULL	https://www.brentozar.com/go/snaps	8 snapshot-looking backups have occurred in the last two weeks, indicating that IO may be freezing up.	NULL	NULL	178
+OAZISDB	210	Non-Default Database Config	Delayed Durability Enabled	OAZMOLP	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	143
+OAZISDB	210	Non-Default Database Config	Delayed Durability Enabled	OAZP	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	143
+OAZISDB	210	Non-Default Database Config	Read Committed Snapshot Isolation Enabled	OAZMOLP	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	133
+OAZISDB	210	Non-Default Database Config	Read Committed Snapshot Isolation Enabled	OAZP	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	133
+OAZISDB	230	Security	Database Owner <> sa	OAZMOLP	https://www.brentozar.com/go/owndb	Database name: OAZMOLP   Owner name: AZSTDIMPNA\operator	NULL	NULL	55
+OAZISDB	230	Security	Database Owner <> sa	OAZP	https://www.brentozar.com/go/owndb	Database name: OAZP   Owner name: AZSTDIMPNA\operator	NULL	NULL	55
+OAZISDB	230	Security	Jobs Owned By Users	NULL	https://www.brentozar.com/go/owners	Job [Aanpassen doc_inv] is owned by [AZSTDIMPNA\ServerAdmin] - meaning if their login is disabled or not available due to Active Directory problems, the job will stop working.	NULL	NULL	6
+OAZISDB	230	Security	Jobs Owned By Users	NULL	https://www.brentozar.com/go/owners	Job [ADT-A08 Ext Verblijf] is owned by [AZSTDIMPNA\ServerAdmin] - meaning if their login is disabled or not available due to Active Directory problems, the job will stop working.	NULL	NULL	6
+OAZISDB	230	Security	Jobs Owned By Users	NULL	https://www.brentozar.com/go/owners	Job [Delete UREG GEEL + MOL] is owned by [AZSTDIMPNA\ServerAdmin] - meaning if their login is disabled or not available due to Active Directory problems, the job will stop working.	NULL	NULL	6
+OAZISDB	230	Security	Jobs Owned By Users	NULL	https://www.brentozar.com/go/owners	Job [GET_PRES_IHC] is owned by [AZSTDIMPNA\ServerAdmin] - meaning if their login is disabled or not available due to Active Directory problems, the job will stop working.	NULL	NULL	6
+OAZISDB	230	Security	Jobs Owned By Users	NULL	https://www.brentozar.com/go/owners	Job [IndexOptimize] is owned by [AZSTDIMPNA\ServerAdmin] - meaning if their login is disabled or not available due to Active Directory problems, the job will stop working.	NULL	NULL	6
+OAZISDB	230	Security	Jobs Owned By Users	NULL	https://www.brentozar.com/go/owners	Job [Route REVA] is owned by [AZSTDIMPNA\karlh] - meaning if their login is disabled or not available due to Active Directory problems, the job will stop working.	NULL	NULL	6
+OAZISDB	230	Security	Jobs Owned By Users	NULL	https://www.brentozar.com/go/owners	Job [Update adres Boonen PID 0047489] is owned by [AZSTDIMPNA\ServerAdmin] - meaning if their login is disabled or not available due to Active Directory problems, the job will stop working.	NULL	NULL	6
+OAZISDB	230	Security	Jobs Owned By Users	NULL	https://www.brentozar.com/go/owners	Job [Vrijgeven 1957 ECS20] is owned by [AZSTDIMPNA\ServerAdmin] - meaning if their login is disabled or not available due to Active Directory problems, the job will stop working.	NULL	NULL	6
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\acc] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\DA_Axians] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\Domain Admins] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\karlh] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\monin] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\operator] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\ServerAdmin] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\xtenso] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [DBMarlin] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [HHMOL\G_Oazis_Admins_Mol] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [nagios] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [OAZISDB\Administrator] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [SQL_HixOazisVAL] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+OAZISDB	240	Wait Stats	No Significant Waits Detected	NULL	https://www.brentozar.com/go/waits	This server might be just sitting around idle, or someone may have cleared wait stats recently.	NULL	NULL	153
+OAZISDB	250	Server Info	Data Size	NULL		3 databases, 1778.22 GB total file size	NULL	NULL	232
+OAZISDB	250	Server Info	Default Trace Contents	NULL	https://www.brentozar.com/go/trace	The default trace holds 43 hours of data between Mar  5 2025  5:57PM and Mar  7 2025 12:46PM. The default trace files are located in: D:\MSSQL\MSSQL14.MSSQLSERVER\MSSQL\Log	NULL	NULL	106
+OAZISDB	250	Server Info	Drive C Space	NULL		8.24 GB free on C drive	NULL	NULL	92
+OAZISDB	250	Server Info	Drive D Space	NULL		58.09 GB free on D drive (Instance) out of 60.00 GB total (3.18% used)	NULL	NULL	92
+OAZISDB	250	Server Info	Drive H Space	NULL		21.59 GB free on H drive (Database) out of 1,500.00 GB total (98.56% used)	NULL	NULL	92
+OAZISDB	250	Server Info	Drive I Space	NULL		49.88 GB free on I drive (Logfile) out of 350.00 GB total (85.75% used)	NULL	NULL	92
+OAZISDB	250	Server Info	Drive K Space	NULL		18.62 GB free on K drive	NULL	NULL	92
+OAZISDB	250	Server Info	Drive L Space	NULL		44.94 GB free on L drive	NULL	NULL	92
+OAZISDB	250	Server Info	Drive T Space	NULL		21.90 GB free on T drive (TempDB) out of 70.00 GB total (68.71% used)	NULL	NULL	92
+OAZISDB	250	Server Info	Hardware	NULL		Logical processors: 8. Physical memory: 64GB.	NULL	NULL	84
+OAZISDB	250	Server Info	Hardware - Memory Counters	NULL	https://www.brentozar.com/go/target	Target Server Memory (GB): 56.0 Total Server Memory (GB): 56.0	NULL	NULL	266
+OAZISDB	250	Server Info	Hardware - NUMA Config	NULL		Node: 0 State: ONLINE Online schedulers: 8 Offline schedulers: 0 Processor Group: 0 Memory node: 0 Memory VAS Reserved GB: 145	NULL	NULL	114
+OAZISDB	250	Server Info	Instant File Initialization Enabled	NULL	https://www.brentozar.com/go/instant	The service account has the Perform Volume Maintenance Tasks permission.	NULL	NULL	193
+OAZISDB	250	Server Info	Locked Pages In Memory Enabled	NULL	https://www.brentozar.com/go/lpim	You currently have 55 GB of pages locked in memory.	NULL	NULL	166
+OAZISDB	250	Server Info	Memory Model Unconventional	NULL	https://www.brentozar.com/go/lpim	Memory Model: LOCK_PAGES	NULL	NULL	166
+OAZISDB	250	Server Info	Operating System Version	NULL	https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions	You're running Windows Server 2019 Standard, version 10.0	NULL	NULL	172
+OAZISDB	250	Server Info	Power Plan	NULL	https://www.brentozar.com/blitz/power-mode/	Your server has 3.19GHz CPUs, and is in balanced power mode -- Uh... you want your CPUs to run at full speed, right?	NULL	NULL	211
+OAZISDB	250	Server Info	Server Last Restart	NULL		Feb 23 2025  8:08AM	NULL	NULL	91
+OAZISDB	250	Server Info	Server Name	NULL	https://www.brentozar.com/go/servername	OAZISDB	NULL	NULL	130
+OAZISDB	250	Server Info	Services	NULL		Service: SQL Server (MSSQLSERVER) runs under service account AZSTDIMPNA\Serv_SQLOazis. Last startup time: Feb 23 2025  8:08AM. Startup type: Automatic, currently Running.	NULL	NULL	83
+OAZISDB	250	Server Info	Services	NULL		Service: SQL Server Agent (MSSQLSERVER) runs under service account LocalSystem. Last startup time: not shown.. Startup type: Automatic, currently Running.	NULL	NULL	83
+OAZISDB	250	Server Info	SQL Server Last Restart	NULL		Feb 23 2025  8:08AM	NULL	NULL	88
+OAZISDB	250	Server Info	SQL Server Service	NULL		Version: 14.0.3485.1. Patch Level: RTM. Cumulative Update: CU31. Edition: Standard Edition (64-bit). Availability Groups Enabled: 0. Availability Groups Manager Status: 1	NULL	NULL	85
+OAZISDB	250	Server Info	Virtual Server	NULL	https://www.brentozar.com/go/virtual	Type: (HYPERVISOR)	NULL	NULL	103
+OAZISDB	254	Rundate	Mar  7 2025 12:46PM	NULL	http://FirstResponderKit.org/	Captain's log: stardate something and something...	NULL	NULL	156
+OAZISDB	255	Thanks!	From Your Community Volunteers	NULL	http://FirstResponderKit.org	We hope you found this tool useful.	NULL	NULL	-1
+SQLCLU-02	0	sp_Blitz Dec 28 2024 12:00AM	SQL Server First Responder Kit	NULL	http://FirstResponderKit.org/	To get help or add your own contributions, join us at http://FirstResponderKit.org.	NULL	NULL	-1
+SQLCLU-02	1	Backup	Backups Not Performed Recently	AG_HIX_master	https://www.brentozar.com/go/nobak	Last backed up: Feb 24 2025 10:00PM	NULL	NULL	1
+SQLCLU-02	1	Backup	Backups Not Performed Recently	AG_HIX_msdb	https://www.brentozar.com/go/nobak	Last backed up: Feb 24 2025 10:00PM	NULL	NULL	1
+SQLCLU-02	1	Backup	Backups Not Performed Recently	HiX_AUDITLOG	https://www.brentozar.com/go/nobak	Last backed up: Feb 24 2025 10:05PM	NULL	NULL	1
+SQLCLU-02	1	Backup	Backups Not Performed Recently	HiX_ENVSETTINGS	https://www.brentozar.com/go/nobak	Last backed up: Feb 24 2025 10:08PM	NULL	NULL	1
+SQLCLU-02	1	Backup	Backups Not Performed Recently	HiX_PROD	https://www.brentozar.com/go/nobak	Last backed up: Feb 24 2025  1:00AM	NULL	NULL	1
+SQLCLU-02	1	Backup	Backups Not Performed Recently	HiX_PROD_MM	https://www.brentozar.com/go/nobak	Last backed up: never	NULL	NULL	1
+SQLCLU-02	1	Backup	Backups Not Performed Recently	HiX_PROD_UXIPLOG	https://www.brentozar.com/go/nobak	Last backed up: Feb 24 2025  2:07AM	NULL	NULL	1
+SQLCLU-02	1	Backup	Full Recovery Model w/o Log Backups	AG_HIX_master	https://www.brentozar.com/go/biglogs	The 1.00MB log file has not been backed up in the last week.	NULL	NULL	2
+SQLCLU-02	1	Backup	Full Recovery Model w/o Log Backups	AG_HIX_msdb	https://www.brentozar.com/go/biglogs	The 417.38MB log file has not been backed up in the last week.	NULL	NULL	2
+SQLCLU-02	1	Backup	Full Recovery Model w/o Log Backups	HiX_AUDITLOG	https://www.brentozar.com/go/biglogs	The 10559.81MB log file has not been backed up in the last week.	NULL	NULL	2
+SQLCLU-02	1	Backup	Full Recovery Model w/o Log Backups	HiX_ENVSETTINGS	https://www.brentozar.com/go/biglogs	The 100.00MB log file has not been backed up in the last week.	NULL	NULL	2
+SQLCLU-02	1	Backup	Full Recovery Model w/o Log Backups	HiX_PROD	https://www.brentozar.com/go/biglogs	The 82431.81MB log file has not been backed up in the last week.	NULL	NULL	2
+SQLCLU-02	1	Backup	Full Recovery Model w/o Log Backups	HiX_PROD_MM	https://www.brentozar.com/go/biglogs	The 4096.00MB log file has not been backed up in the last week.	NULL	NULL	2
+SQLCLU-02	1	Backup	Full Recovery Model w/o Log Backups	HiX_PROD_UXIPLOG	https://www.brentozar.com/go/biglogs	The 41279.94MB log file has not been backed up in the last week.	NULL	NULL	2
+SQLCLU-02	50	Performance	Recovery Interval Not Optimal	HiX_PROD_MM	https://sqlperformance.com/2020/05/system-configuration/0-to-60-switching-to-indirect-checkpoints	The database [HiX_PROD_MM] has a target recovery interval of 0, which is a legacy default, and should be changed to 60.	NULL	NULL	257
+SQLCLU-02	100	Performance	Many Plans for One Query	NULL	https://www.brentozar.com/go/parameterization	1016 plans are present for a single query in the plan cache - meaning we probably have parameterization issues.	NULL	NULL	160
+SQLCLU-02	110	Performance	Auto-Update Stats Disabled	HiX_PROD	https://www.brentozar.com/go/aus	Database [HiX_PROD] has auto-update-stats disabled.  SQL Server uses statistics to build better execution plans, and without the ability to automatically update them, performance may suffer.	NULL	NULL	16
+SQLCLU-02	150	Performance	Slow Storage Writes on Drive H	NULL	https://www.brentozar.com/go/slow	Writes are averaging longer than 100ms for at least one database on this drive.  For specific database file speeds, run the query from the information link.	NULL	NULL	37
+SQLCLU-02	200	Informational	Agent Jobs Starting Simultaneously	NULL	https://www.brentozar.com/go/busyagent/	Multiple SQL Server Agent jobs are configured to start simultaneously. For detailed schedule listings, see the query in the URL.	NULL	NULL	123
+SQLCLU-02	200	Informational	Cluster Node	NULL	https://BrentOzar.com/go/node	This is a node in a cluster.	NULL	NULL	53
+SQLCLU-02	200	Informational	Cluster Node Info	NULL	https://BrentOzar.com/go/node	The cluster nodes are:  PRIMARY=SQLCLU-01, SECONDARY=SQLCLU-02 - High Availability solution used is AlwaysOn Availability Group (AG)	NULL	NULL	53
+SQLCLU-02	200	Informational	Linked Server Configured	NULL	https://www.brentozar.com/go/link	BERNERSLEE\SQLEXPRESS is configured as a linked server. Check its security configuration to make sure it isn't connecting with SA or some other bone-headed administrative login, because any user who queries it might get admin-level permissions.	NULL	NULL	49
+SQLCLU-02	200	Informational	Linked Server Configured	NULL	https://www.brentozar.com/go/link	JOMINI is configured as a linked server. Check its security configuration to make sure it isn't connecting with SA or some other bone-headed administrative login, because any user who queries it might get admin-level permissions.	NULL	NULL	49
+SQLCLU-02	200	Informational	Tables in the MSDB Database	msdb	https://www.brentozar.com/go/msdbuser	The arcJobDefinitions table in the msdb database was created by end users on Oct  8 2024 11:41AM. Tables in the msdb database may not be restored in the event of a disaster.	NULL	NULL	28
+SQLCLU-02	200	Informational	Tables in the MSDB Database	msdb	https://www.brentozar.com/go/msdbuser	The arcJobTriggers00 table in the msdb database was created by end users on Oct  8 2024 11:41AM. Tables in the msdb database may not be restored in the event of a disaster.	NULL	NULL	28
+SQLCLU-02	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job DatabaseBackup - USER_DATABASES - LOG has not been set up to notify an operator if it fails.	NULL	NULL	94
+SQLCLU-02	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job DatabaseIntegrityCheck - USER_DATABASES has not been set up to notify an operator if it fails.	NULL	NULL	94
+SQLCLU-02	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job IndexOptimize - USER_DATABASES has not been set up to notify an operator if it fails.	NULL	NULL	94
+SQLCLU-02	200	Non-Default Server Config	Agent XPs	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1071
+SQLCLU-02	200	Non-Default Server Config	backup compression default	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1073
+SQLCLU-02	200	Non-Default Server Config	contained database authentication	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1068
+SQLCLU-02	200	Non-Default Server Config	cost threshold for parallelism	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 5 and it has been set to 50.	NULL	NULL	1012
+SQLCLU-02	200	Non-Default Server Config	Database Mail XPs	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1072
+SQLCLU-02	200	Non-Default Server Config	filestream access level	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1076
+SQLCLU-02	200	Non-Default Server Config	max degree of parallelism	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1029
+SQLCLU-02	200	Non-Default Server Config	max server memory (MB)	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 2147483647 and it has been set to 507904.	NULL	NULL	1031
+SQLCLU-02	200	Non-Default Server Config	min server memory (MB)	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 10240.	NULL	NULL	1036
+SQLCLU-02	200	Non-Default Server Config	optimize for ad hoc workloads	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1041
+SQLCLU-02	200	Non-Default Server Config	remote admin connections	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1049
+SQLCLU-02	200	Non-Default Server Config	user connections	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 32767.	NULL	NULL	1062
+SQLCLU-02	210	Non-Default Database Config	Broker Enabled	AG_HIX_msdb	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	230
+SQLCLU-02	210	Non-Default Database Config	Delayed Durability Enabled	HiX_AUDITLOG	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	143
+SQLCLU-02	210	Non-Default Database Config	Delayed Durability Enabled	HiX_ENVSETTINGS	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	143
+SQLCLU-02	210	Non-Default Database Config	Delayed Durability Enabled	HiX_PROD	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	143
+SQLCLU-02	210	Non-Default Database Config	Delayed Durability Enabled	HiX_PROD_MM	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	143
+SQLCLU-02	210	Non-Default Database Config	Delayed Durability Enabled	HiX_PROD_UXIPLOG	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	143
+SQLCLU-02	210	Non-Default Database Config	Snapshot Isolation Enabled	AG_HIX_master	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	132
+SQLCLU-02	210	Non-Default Database Config	Snapshot Isolation Enabled	HiX_AUDITLOG	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	132
+SQLCLU-02	210	Non-Default Database Config	Snapshot Isolation Enabled	HiX_ENVSETTINGS	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	132
+SQLCLU-02	210	Non-Default Database Config	Snapshot Isolation Enabled	HiX_PROD	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	132
+SQLCLU-02	210	Non-Default Database Config	Snapshot Isolation Enabled	HiX_PROD_MM	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	132
+SQLCLU-02	210	Non-Default Database Config	Snapshot Isolation Enabled	HiX_PROD_UXIPLOG	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	132
+SQLCLU-02	210	Non-Default Database Config	Trustworthy Enabled	AG_HIX_msdb	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	137
+SQLCLU-02	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\_grpChipsoftAdmin] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+SQLCLU-02	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\Domain Admins] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+SQLCLU-02	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\monin] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+SQLCLU-02	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\ServerAdmin] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+SQLCLU-02	240	Wait Stats	No Significant Waits Detected	NULL	https://www.brentozar.com/go/waits	This server might be just sitting around idle, or someone may have cleared wait stats recently.	NULL	NULL	153
+SQLCLU-02	250	Server Info	Data Size	NULL		8 databases, 9871.44 GB total file size	NULL	NULL	232
+SQLCLU-02	250	Server Info	Default Trace Contents	NULL	https://www.brentozar.com/go/trace	The default trace holds 865 hours of data between Jan 30 2025 11:38AM and Mar  7 2025 12:46PM. The default trace files are located in: D:\MSSQL16.MSSQLSERVER\MSSQL\Log	NULL	NULL	106
+SQLCLU-02	250	Server Info	Drive C Space	NULL		378.07 GB free on C drive	NULL	NULL	92
+SQLCLU-02	250	Server Info	Drive D Space	NULL		17.62 GB free on D drive (SystemDb) out of 19.98 GB total (11.83% used)	NULL	NULL	92
+SQLCLU-02	250	Server Info	Drive F Space	NULL		118.42 GB free on F drive (LogDb) out of 249.98 GB total (52.63% used)	NULL	NULL	92
+SQLCLU-02	250	Server Info	Drive H Space	NULL		335.94 GB free on H drive (DataDb) out of 4,095.98 GB total (91.80% used)	NULL	NULL	92
+SQLCLU-02	250	Server Info	Drive L Space	NULL		119.87 GB free on L drive	NULL	NULL	92
+SQLCLU-02	250	Server Info	Drive M Space	NULL		1,929.58 GB free on M drive (Multimedia) out of 8,191.98 GB total (76.45% used)	NULL	NULL	92
+SQLCLU-02	250	Server Info	Drive T Space	NULL		1.89 GB free on T drive (TempDb) out of 139.98 GB total (98.65% used)	NULL	NULL	92
+SQLCLU-02	250	Server Info	Hardware	NULL		Logical processors: 32. Physical memory: 511GB.	NULL	NULL	84
+SQLCLU-02	250	Server Info	Hardware - Memory Counters	NULL	https://www.brentozar.com/go/target	Target Server Memory (GB): 475.7 Total Server Memory (GB): 475.7	NULL	NULL	266
+SQLCLU-02	250	Server Info	Hardware - NUMA Config	NULL		Node: 0 State: ONLINE Online schedulers: 16 Offline schedulers: 0 Processor Group: 0 Memory node: 0 Memory VAS Reserved GB: 912	NULL	NULL	114
+SQLCLU-02	250	Server Info	Hardware - NUMA Config	NULL		Node: 1 State: ONLINE Online schedulers: 16 Offline schedulers: 0 Processor Group: 0 Memory node: 0 Memory VAS Reserved GB: 912	NULL	NULL	114
+SQLCLU-02	250	Server Info	Instant File Initialization Enabled	NULL	https://www.brentozar.com/go/instant	The service account has the Perform Volume Maintenance Tasks permission.	NULL	NULL	193
+SQLCLU-02	250	Server Info	Locked Pages In Memory Enabled	NULL	https://www.brentozar.com/go/lpim	You currently have 471 GB of pages locked in memory.	NULL	NULL	166
+SQLCLU-02	250	Server Info	Memory Model Unconventional	NULL	https://www.brentozar.com/go/lpim	Memory Model: LOCK_PAGES	NULL	NULL	166
+SQLCLU-02	250	Server Info	Operating System Version	NULL	https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions	You're running Windows Server 2022 Standard, version 10.0	NULL	NULL	172
+SQLCLU-02	250	Server Info	Power Plan	NULL	https://www.brentozar.com/blitz/power-mode/	Your server has 2.80GHz CPUs, and is in high performance power mode	NULL	NULL	211
+SQLCLU-02	250	Server Info	Server Last Restart	NULL		Feb 14 2025  9:17AM	NULL	NULL	91
+SQLCLU-02	250	Server Info	Server Name	NULL	https://www.brentozar.com/go/servername	SQLCLU-02	NULL	NULL	130
+SQLCLU-02	250	Server Info	Services	NULL		Service: SQL Full-text Filter Daemon Launcher (MSSQLSERVER) runs under service account NT Service\MSSQLFDLauncher. Last startup time: not shown.. Startup type: Manual, currently Running.	NULL	NULL	83
+SQLCLU-02	250	Server Info	Services	NULL		Service: SQL Server (MSSQLSERVER) runs under service account AZSTDIMPNA\gMSAsqlclus$. Last startup time: Feb 14 2025  9:20AM. Startup type: Automatic, currently Running.	NULL	NULL	83
+SQLCLU-02	250	Server Info	Services	NULL		Service: SQL Server Agent (MSSQLSERVER) runs under service account AZSTDIMPNA\gMSAsqlclus$. Last startup time: not shown.. Startup type: Automatic, currently Running.	NULL	NULL	83
+SQLCLU-02	250	Server Info	SQL Server Last Restart	NULL		Feb 14 2025  9:20AM	NULL	NULL	88
+SQLCLU-02	250	Server Info	SQL Server Service	NULL		Version: 16.0.4175.1. Patch Level: RTM. Cumulative Update: CU17. Edition: Enterprise Edition: Core-based Licensing (64-bit). Availability Groups Enabled: 1. Availability Groups Manager Status: 1	NULL	NULL	85
+SQLCLU-02	254	Rundate	Mar  7 2025 12:46PM	NULL	http://FirstResponderKit.org/	Captain's log: stardate something and something...	NULL	NULL	156
+SQLCLU-02	255	Thanks!	From Your Community Volunteers	NULL	http://FirstResponderKit.org	We hope you found this tool useful.	NULL	NULL	-1
+SQLCLU-01	0	sp_Blitz Dec 28 2024 12:00AM	SQL Server First Responder Kit	NULL	http://FirstResponderKit.org/	To get help or add your own contributions, join us at http://FirstResponderKit.org.	NULL	NULL	-1
+SQLCLU-01	1	Backup	Backups Not Performed Recently	HiX_PROD_MM	https://www.brentozar.com/go/nobak	Last backed up: never	NULL	NULL	1
+SQLCLU-01	1	Backup	Full Recovery Model w/o Log Backups	AG_HIX_master	https://www.brentozar.com/go/biglogs	The 1.00MB log file has not been backed up in the last week.	NULL	NULL	2
+SQLCLU-01	1	Backup	Full Recovery Model w/o Log Backups	AG_HIX_msdb	https://www.brentozar.com/go/biglogs	The 417.38MB log file has not been backed up in the last week.	NULL	NULL	2
+SQLCLU-01	1	Backup	Full Recovery Model w/o Log Backups	BackupFoundation	https://www.brentozar.com/go/biglogs	The 120.00MB log file has not been backed up in the last week.	NULL	NULL	2
+SQLCLU-01	50	DBCC Events	Overall Events	NULL	https://www.BrentOzar.com/go/dbcc	1 DBCC events have taken place between Feb 18 2025  1:36PM and Feb 18 2025  1:36PM. This does not include CHECKDB and other usually benign DBCC events.	NULL	NULL	203
+SQLCLU-01	50	Performance	Recovery Interval Not Optimal	HiX_PROD_MM	https://sqlperformance.com/2020/05/system-configuration/0-to-60-switching-to-indirect-checkpoints	The database [HiX_PROD_MM] has a target recovery interval of 0, which is a legacy default, and should be changed to 60.	NULL	NULL	257
+SQLCLU-01	100	Performance	Many Plans for One Query	NULL	https://www.brentozar.com/go/parameterization	517 plans are present for a single query in the plan cache - meaning we probably have parameterization issues.	NULL	NULL	160
+SQLCLU-01	110	Performance	Auto-Update Stats Disabled	HiX_PROD	https://www.brentozar.com/go/aus	Database [HiX_PROD] has auto-update-stats disabled.  SQL Server uses statistics to build better execution plans, and without the ability to automatically update them, performance may suffer.	NULL	NULL	16
+SQLCLU-01	150	Performance	Deadlocks Happening Daily	NULL	https://www.brentozar.com/go/deadlocks	61 average deadlocks per day. To find them, run sp_BlitzLock.	NULL	NULL	124
+SQLCLU-01	150	Performance	Slow Storage Writes on Drive H	NULL	https://www.brentozar.com/go/slow	Writes are averaging longer than 100ms for at least one database on this drive.  For specific database file speeds, run the query from the information link.	NULL	NULL	37
+SQLCLU-01	200	Informational	Agent Jobs Starting Simultaneously	NULL	https://www.brentozar.com/go/busyagent/	Multiple SQL Server Agent jobs are configured to start simultaneously. For detailed schedule listings, see the query in the URL.	NULL	NULL	123
+SQLCLU-01	200	Informational	Cluster Node	NULL	https://BrentOzar.com/go/node	This is a node in a cluster.	NULL	NULL	53
+SQLCLU-01	200	Informational	Cluster Node Info	NULL	https://BrentOzar.com/go/node	The cluster nodes are:  PRIMARY=SQLCLU-01, SECONDARY=SQLCLU-02 - High Availability solution used is AlwaysOn Availability Group (AG)	NULL	NULL	53
+SQLCLU-01	200	Informational	Collation is Latin1_General_CI_AS	BackupFoundation	https://www.brentozar.com/go/collate	Collation differences between user databases and tempdb can cause conflicts especially when comparing string values	NULL	NULL	76
+SQLCLU-01	200	Informational	Linked Server Configured	NULL	https://www.brentozar.com/go/link	BERNERSLEE\SQLEXPRESS is configured as a linked server. Check its security configuration to make sure it isn't connecting with SA or some other bone-headed administrative login, because any user who queries it might get admin-level permissions.	NULL	NULL	49
+SQLCLU-01	200	Informational	Linked Server Configured	NULL	https://www.brentozar.com/go/link	JOMINI is configured as a linked server. Check its security configuration to make sure it isn't connecting with SA or some other bone-headed administrative login, because any user who queries it might get admin-level permissions.	NULL	NULL	49
+SQLCLU-01	200	Informational	Tables in the MSDB Database	msdb	https://www.brentozar.com/go/msdbuser	The arcJobDefinitions table in the msdb database was created by end users on Oct  8 2024 11:48AM. Tables in the msdb database may not be restored in the event of a disaster.	NULL	NULL	28
+SQLCLU-01	200	Informational	Tables in the MSDB Database	msdb	https://www.brentozar.com/go/msdbuser	The arcJobTriggers00 table in the msdb database was created by end users on Oct  8 2024 11:48AM. Tables in the msdb database may not be restored in the event of a disaster.	NULL	NULL	28
+SQLCLU-01	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job DatabaseBackup - USER_DATABASES - LOG has not been set up to notify an operator if it fails.	NULL	NULL	94
+SQLCLU-01	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job DatabaseIntegrityCheck - USER_DATABASES has not been set up to notify an operator if it fails.	NULL	NULL	94
+SQLCLU-01	200	Monitoring	Agent Jobs Without Failure Emails	NULL	https://www.brentozar.com/go/alerts	The job IndexOptimize - USER_DATABASES has not been set up to notify an operator if it fails.	NULL	NULL	94
+SQLCLU-01	200	Non-Default Server Config	Agent XPs	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1071
+SQLCLU-01	200	Non-Default Server Config	backup compression default	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1073
+SQLCLU-01	200	Non-Default Server Config	contained database authentication	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1068
+SQLCLU-01	200	Non-Default Server Config	cost threshold for parallelism	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 5 and it has been set to 50.	NULL	NULL	1012
+SQLCLU-01	200	Non-Default Server Config	Database Mail XPs	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1072
+SQLCLU-01	200	Non-Default Server Config	filestream access level	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1076
+SQLCLU-01	200	Non-Default Server Config	max degree of parallelism	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1029
+SQLCLU-01	200	Non-Default Server Config	max server memory (MB)	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 2147483647 and it has been set to 507904.	NULL	NULL	1031
+SQLCLU-01	200	Non-Default Server Config	min server memory (MB)	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 10240.	NULL	NULL	1036
+SQLCLU-01	200	Non-Default Server Config	optimize for ad hoc workloads	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1041
+SQLCLU-01	200	Non-Default Server Config	remote admin connections	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 1.	NULL	NULL	1049
+SQLCLU-01	200	Non-Default Server Config	user connections	NULL	https://www.brentozar.com/go/conf	This sp_configure option has been changed.  Its default value is 0 and it has been set to 32767.	NULL	NULL	1062
+SQLCLU-01	210	Non-Default Database Config	Broker Enabled	AG_HIX_msdb	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	230
+SQLCLU-01	210	Non-Default Database Config	Delayed Durability Enabled	HiX_AUDITLOG	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	143
+SQLCLU-01	210	Non-Default Database Config	Delayed Durability Enabled	HiX_ENVSETTINGS	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	143
+SQLCLU-01	210	Non-Default Database Config	Delayed Durability Enabled	HiX_PROD	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	143
+SQLCLU-01	210	Non-Default Database Config	Delayed Durability Enabled	HiX_PROD_MM	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	143
+SQLCLU-01	210	Non-Default Database Config	Delayed Durability Enabled	HiX_PROD_UXIPLOG	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	143
+SQLCLU-01	210	Non-Default Database Config	Snapshot Isolation Enabled	AG_HIX_master	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	132
+SQLCLU-01	210	Non-Default Database Config	Snapshot Isolation Enabled	HiX_AUDITLOG	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	132
+SQLCLU-01	210	Non-Default Database Config	Snapshot Isolation Enabled	HiX_ENVSETTINGS	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	132
+SQLCLU-01	210	Non-Default Database Config	Snapshot Isolation Enabled	HiX_PROD	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	132
+SQLCLU-01	210	Non-Default Database Config	Snapshot Isolation Enabled	HiX_PROD_MM	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	132
+SQLCLU-01	210	Non-Default Database Config	Snapshot Isolation Enabled	HiX_PROD_UXIPLOG	https://www.brentozar.com/go/dbdefaults	This database setting is not the default.	NULL	NULL	132
+SQLCLU-01	230	Security	Database Owner <> sa	BackupFoundation	https://www.brentozar.com/go/owndb	Database name: BackupFoundation   Owner name: AZSTDIMPNA\DA_Axians	NULL	NULL	55
+SQLCLU-01	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\_grpChipsoftAdmin] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+SQLCLU-01	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\Domain Admins] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+SQLCLU-01	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\monin] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+SQLCLU-01	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\ServerAdmin] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+SQLCLU-01	230	Security	Sysadmins	NULL	https://www.brentozar.com/go/sa	Login [AZSTDIMPNA\technician] is a sysadmin - meaning they can do absolutely anything in SQL Server, including dropping databases or hiding their tracks.	NULL	NULL	4
+SQLCLU-01	240	Wait Stats	No Significant Waits Detected	NULL	https://www.brentozar.com/go/waits	This server might be just sitting around idle, or someone may have cleared wait stats recently.	NULL	NULL	153
+SQLCLU-01	250	Server Info	Data Size	NULL		9 databases, 3905.21 GB total file size	NULL	NULL	232
+SQLCLU-01	250	Server Info	Default Trace Contents	NULL	https://www.brentozar.com/go/trace	The default trace holds 505 hours of data between Feb 14 2025 11:10AM and Mar  7 2025 12:46PM. The default trace files are located in: D:\MSSQL16.MSSQLSERVER\MSSQL\Log	NULL	NULL	106
+SQLCLU-01	250	Server Info	Drive C Space	NULL		377.73 GB free on C drive	NULL	NULL	92
+SQLCLU-01	250	Server Info	Drive D Space	NULL		17.40 GB free on D drive (SystemDb) out of 19.98 GB total (12.93% used)	NULL	NULL	92
+SQLCLU-01	250	Server Info	Drive F Space	NULL		118.24 GB free on F drive (LogDb) out of 249.98 GB total (52.70% used)	NULL	NULL	92
+SQLCLU-01	250	Server Info	Drive H Space	NULL		335.76 GB free on H drive (DataDb) out of 4,095.98 GB total (91.80% used)	NULL	NULL	92
+SQLCLU-01	250	Server Info	Drive L Space	NULL		119.88 GB free on L drive	NULL	NULL	92
+SQLCLU-01	250	Server Info	Drive M Space	NULL		1,929.56 GB free on M drive (Multimedia) out of 8,191.98 GB total (76.45% used)	NULL	NULL	92
+SQLCLU-01	250	Server Info	Drive T Space	NULL		1.89 GB free on T drive (TempDb) out of 139.98 GB total (98.65% used)	NULL	NULL	92
+SQLCLU-01	250	Server Info	Hardware	NULL		Logical processors: 32. Physical memory: 511GB.	NULL	NULL	84
+SQLCLU-01	250	Server Info	Hardware - Memory Counters	NULL	https://www.brentozar.com/go/target	Target Server Memory (GB): 486.6 Total Server Memory (GB): 486.6	NULL	NULL	266
+SQLCLU-01	250	Server Info	Hardware - NUMA Config	NULL		Node: 0 State: ONLINE Online schedulers: 16 Offline schedulers: 0 Processor Group: 0 Memory node: 0 Memory VAS Reserved GB: 912	NULL	NULL	114
+SQLCLU-01	250	Server Info	Hardware - NUMA Config	NULL		Node: 1 State: ONLINE Online schedulers: 16 Offline schedulers: 0 Processor Group: 0 Memory node: 0 Memory VAS Reserved GB: 912	NULL	NULL	114
+SQLCLU-01	250	Server Info	Instant File Initialization Enabled	NULL	https://www.brentozar.com/go/instant	The service account has the Perform Volume Maintenance Tasks permission.	NULL	NULL	193
+SQLCLU-01	250	Server Info	Locked Pages In Memory Enabled	NULL	https://www.brentozar.com/go/lpim	You currently have 482 GB of pages locked in memory.	NULL	NULL	166
+SQLCLU-01	250	Server Info	Memory Model Unconventional	NULL	https://www.brentozar.com/go/lpim	Memory Model: LOCK_PAGES	NULL	NULL	166
+SQLCLU-01	250	Server Info	Operating System Version	NULL	https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions	You're running Windows Server 2022 Standard, version 10.0	NULL	NULL	172
+SQLCLU-01	250	Server Info	Power Plan	NULL	https://www.brentozar.com/blitz/power-mode/	Your server has 2.80GHz CPUs, and is in high performance power mode	NULL	NULL	211
+SQLCLU-01	250	Server Info	Server Last Restart	NULL		Feb 23 2025  8:10AM	NULL	NULL	91
+SQLCLU-01	250	Server Info	Server Name	NULL	https://www.brentozar.com/go/servername	SQLCLU-01	NULL	NULL	130
+SQLCLU-01	250	Server Info	Services	NULL		Service: SQL Full-text Filter Daemon Launcher (MSSQLSERVER) runs under service account NT Service\MSSQLFDLauncher. Last startup time: not shown.. Startup type: Manual, currently Running.	NULL	NULL	83
+SQLCLU-01	250	Server Info	Services	NULL		Service: SQL Server (MSSQLSERVER) runs under service account AZSTDIMPNA\gMSAsqlclus$. Last startup time: Feb 23 2025  8:13AM. Startup type: Automatic, currently Running.	NULL	NULL	83
+SQLCLU-01	250	Server Info	Services	NULL		Service: SQL Server Agent (MSSQLSERVER) runs under service account AZSTDIMPNA\gMSAsqlclus$. Last startup time: not shown.. Startup type: Automatic, currently Running.	NULL	NULL	83
+SQLCLU-01	250	Server Info	SQL Server Last Restart	NULL		Feb 23 2025  8:13AM	NULL	NULL	88
+SQLCLU-01	250	Server Info	SQL Server Service	NULL		Version: 16.0.4175.1. Patch Level: RTM. Cumulative Update: CU17. Edition: Enterprise Edition: Core-based Licensing (64-bit). Availability Groups Enabled: 1. Availability Groups Manager Status: 1	NULL	NULL	85
+SQLCLU-01	254	Rundate	Mar  7 2025 12:46PM	NULL	http://FirstResponderKit.org/	Captain's log: stardate something and something...	NULL	NULL	156
+SQLCLU-01	255	Thanks!	From Your Community Volunteers	NULL	http://FirstResponderKit.org	We hope you found this tool useful.	NULL	NULL	-1

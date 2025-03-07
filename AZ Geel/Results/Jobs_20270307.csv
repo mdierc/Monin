@@ -1,0 +1,63 @@
+﻿Server Name	InstanceName	JobName	Enabled	ScheduleName	FreqRecurrenceFactor	Frequency	Days	Time
+SQLCLU-01	MSSQLSERVER	AXIANS_FileGroupBackup_DIFF	1	AXIANS Backup Daily DIFF	1	Weekly	SundayMondayTuesdayWednesdayThursdayFriday	 starting at 21:30:00
+SQLCLU-01	MSSQLSERVER	AXIANS_FileGroupBackup_FULL	1	AXIANS Backup Weekly FULL	1	Weekly	SundaySaturday	 starting at 21:30:00
+SQLCLU-01	MSSQLSERVER	CommandLog Cleanup	1	Schedule CommandLog Cleanup	0	Daily	Every 1 day(s)	 starting at 00:00:00
+SQLCLU-01	MSSQLSERVER	DatabaseBackup - HiX_PROD_MM - LOG	1	Schedule DatabaseBackup - USER_DATABASES - LOG	0	Daily	Every 1 day(s)	 every 15 minutes starting at 00:00:00
+SQLCLU-01	MSSQLSERVER	DatabaseBackup - SYSTEM_DATABASES - FULL	1	Schedule DatabaseBackup - SYSTEM_DATABASES - FULL	0	Daily	Every 1 day(s)	 starting at 20:00:00
+SQLCLU-01	MSSQLSERVER	DatabaseBackup - USER_DATABASES - DIFF	0	Schedule DatabaseBackup - USER_DATABASES - DIFF	1	Weekly	MondayTuesdayWednesdayThursdayFridaySaturday	 starting at 20:00:00
+SQLCLU-01	MSSQLSERVER	DatabaseBackup - USER_DATABASES - FULL	1	Schedule DatabaseBackup - USER_DATABASES - FULL	0	Daily	Every 1 day(s)	 starting at 22:00:00
+SQLCLU-01	MSSQLSERVER	DatabaseIntegrityCheck - SYSTEM_DATABASES	1	Schedule DatabaseIntegrityCheck - SYSTEM_DATABASES	0	Daily	Every 1 day(s)	 starting at 00:00:00
+SQLCLU-01	MSSQLSERVER	DO NOT USE - DatabaseIntegrityCheck - USER_DATABASES	0	Schedule DatabaseIntegrityCheck - USER_DATABASES	0	Daily	Every 1 day(s)	 starting at 02:00:00
+SQLCLU-01	MSSQLSERVER	DO NOT USE - IndexOptimize - USER_DATABASES	0	Schedule IndexOptimize - USER_DATABASES	0	Daily	Every 1 day(s)	 starting at 22:00:00
+SQLCLU-01	MSSQLSERVER	HIX - MaintenanceDaily	1	Dagelijks 4h05	0	Daily	Every 1 day(s)	 starting at 04:05:00
+SQLCLU-01	MSSQLSERVER	HIX - MaintenanceWeekly	1	Wekelijks Zo 6u05	1	Weekly	Sunday	 starting at 06:05:00
+SQLCLU-01	MSSQLSERVER	Output File Cleanup	1	Schedule Output File Cleanup	0	Daily	Every 1 day(s)	 starting at 00:00:00
+SQLCLU-01	MSSQLSERVER	sp_delete_backuphistory	1	Schedule sp_delete_backuphistory	0	Daily	Every 1 day(s)	 starting at 00:00:00
+SQLCLU-01	MSSQLSERVER	sp_purge_jobhistory	1	Schedule sp_purge_jobhistory	0	Daily	Every 1 day(s)	 starting at 00:00:00
+SQLCLU-01	MSSQLSERVER	syspolicy_purge_history	1	Schedule syspolicy_purge_history	0	Daily	Every 1 day(s)	 starting at 00:00:00
+SQLCLU-01	MSSQLSERVER	syspolicy_purge_history	1	syspolicy_purge_history_schedule	0	Daily	Every 1 day(s)	 starting at 02:00:00
+SQLCLU-02	MSSQLSERVER	CommandLog Cleanup	1	Schedule CommandLog Cleanup	0	Daily	Every 1 day(s)	 starting at 00:00:00
+SQLCLU-02	MSSQLSERVER	DatabaseBackup - HiX_PROD_MM - LOG	1	Schedule DatabaseBackup - USER_DATABASES - LOG	0	Daily	Every 1 day(s)	 every 15 minutes starting at 00:00:00
+SQLCLU-02	MSSQLSERVER	DatabaseBackup - SYSTEM_DATABASES - FULL	1	Schedule DatabaseBackup - SYSTEM_DATABASES - FULL	0	Daily	Every 1 day(s)	 starting at 20:00:00
+SQLCLU-02	MSSQLSERVER	DatabaseBackup - USER_DATABASES - DIFF	0	Schedule DatabaseBackup - USER_DATABASES - DIFF	1	Weekly	MondayTuesdayWednesdayThursdayFridaySaturday	 starting at 20:00:00
+SQLCLU-02	MSSQLSERVER	DatabaseBackup - USER_DATABASES - FULL	1	Schedule DatabaseBackup - USER_DATABASES - FULL	0	Daily	Every 1 day(s)	 starting at 22:00:00
+SQLCLU-02	MSSQLSERVER	DatabaseIntegrityCheck - SYSTEM_DATABASES	1	Schedule DatabaseIntegrityCheck - SYSTEM_DATABASES	0	Daily	Every 1 day(s)	 starting at 00:00:00
+SQLCLU-02	MSSQLSERVER	DO NOT USE -  DatabaseIntegrityCheck - USER_DATABASES	0	Schedule DatabaseIntegrityCheck - USER_DATABASES	0	Daily	Every 1 day(s)	 starting at 02:00:00
+SQLCLU-02	MSSQLSERVER	DO NOT USE -  IndexOptimize - USER_DATABASES	0	Schedule IndexOptimize - USER_DATABASES	0	Daily	Every 1 day(s)	 starting at 22:00:00
+SQLCLU-02	MSSQLSERVER	HIX - MaintenanceDaily	1	Dagelijks 4h05	0	Daily	Every 1 day(s)	 starting at 04:05:00
+SQLCLU-02	MSSQLSERVER	HIX - MaintenanceWeekly	1	Wekelijks Zo 6u05	1	Weekly	Sunday	 starting at 06:05:00
+SQLCLU-02	MSSQLSERVER	Output File Cleanup	1	Schedule Output File Cleanup	0	Daily	Every 1 day(s)	 starting at 00:00:00
+SQLCLU-02	MSSQLSERVER	sp_delete_backuphistory	1	Schedule sp_delete_backuphistory	0	Daily	Every 1 day(s)	 starting at 00:00:00
+SQLCLU-02	MSSQLSERVER	sp_purge_jobhistory	1	Schedule sp_purge_jobhistory	0	Daily	Every 1 day(s)	 starting at 00:00:00
+SQLCLU-02	MSSQLSERVER	syspolicy_purge_history	1	Schedule syspolicy_purge_history	0	Daily	Every 1 day(s)	 starting at 00:00:00
+SQLCLU-02	MSSQLSERVER	syspolicy_purge_history	1	syspolicy_purge_history_schedule	0	Daily	Every 1 day(s)	 starting at 02:00:00
+OAZISDB	MSSQLSERVER	_Server: Recycle the SQL Server error log	1	Daily recycle of the SQL Server error log	0	Daily	Every 1 day(s)	 starting at 00:00:00
+OAZISDB	MSSQLSERVER	ADT-A08 Ext Verblijf	1	Elke 5 min	0	Daily	Every 1 day(s)	 every 5 minutes starting at 00:00:00
+OAZISDB	MSSQLSERVER	Backup_OAZMOLP.Subplan_1	1	Backup_OAZMOLP.Subplan_1	0	Daily	Every 1 day(s)	 starting at 20:50:00
+OAZISDB	MSSQLSERVER	Backup_OAZP.Subplan_1	1	Backup_OAZP.Subplan_1	0	Daily	Every 1 day(s)	 starting at 20:00:00
+OAZISDB	MSSQLSERVER	Backup_System.Subplan_1	1	Backup_System.Subplan_1	0	Daily	Every 1 day(s)	 starting at 19:30:00
+OAZISDB	MSSQLSERVER	Cleanup_History.Subplan_1	1	Cleanup_History.Subplan_1	0	Daily	Every 1 day(s)	 starting at 19:00:00
+OAZISDB	MSSQLSERVER	CommandLog Cleanup	1		0	No Schedule		
+OAZISDB	MSSQLSERVER	DatabaseBackup - SYSTEM_DATABASES - FULL	1		0	No Schedule		
+OAZISDB	MSSQLSERVER	DatabaseBackup - USER_DATABASES - DIFF	1		0	No Schedule		
+OAZISDB	MSSQLSERVER	DatabaseBackup - USER_DATABASES - FULL	1		0	No Schedule		
+OAZISDB	MSSQLSERVER	DatabaseBackup - USER_DATABASES - LOG	1		0	No Schedule		
+OAZISDB	MSSQLSERVER	DatabaseIntegrityCheck - SYSTEM_DATABASES	1		0	No Schedule		
+OAZISDB	MSSQLSERVER	DatabaseIntegrityCheck - USER_DATABASES	1		0	No Schedule		
+OAZISDB	MSSQLSERVER	Delete UREG GEEL + MOL	1	Dagelijks - 22:30	0	Daily	Every 1 day(s)	 starting at 22:30:00
+OAZISDB	MSSQLSERVER	Doorzenden HL7 berichten status 77	0	Dag	0	Daily	Every 1 day(s)	 every 3 minutes starting at 05:00:00
+OAZISDB	MSSQLSERVER	Doorzenden HL7 berichten status 77	0	Weekend	1	Weekly	SundaySaturday	 every 3 minutes starting at 05:00:00
+OAZISDB	MSSQLSERVER	GET_PRES_IHC	1	Dagelijks - 02:00	0	Daily	Every 1 day(s)	 starting at 02:00:00
+OAZISDB	MSSQLSERVER	IndexOptimize	1	Dagelijks- 05:00	0	Daily	Every 1 day(s)	 starting at 05:00:00
+OAZISDB	MSSQLSERVER	IndexOptimize - USER_DATABASES	1		0	No Schedule		
+OAZISDB	MSSQLSERVER	LSAlert_OAZISDB	1	Log shipping alert job schedule.	0	Daily	Every 1 day(s)	 every 2 minutes starting at 00:00:00
+OAZISDB	MSSQLSERVER	LSBackup_OAZMOLP	1	LSBackupSchedule_OAZISDB1	0	Daily	Every 1 day(s)	 every 15 minutes starting at 00:00:00
+OAZISDB	MSSQLSERVER	LSBackup_OAZP	1	LSBackupSchedule_OAZISDB1	0	Daily	Every 1 day(s)	 every 15 minutes starting at 00:00:00
+OAZISDB	MSSQLSERVER	Output File Cleanup	1	Dagelijks - 00:30	0	Daily	Every 1 day(s)	 starting at 00:30:00
+OAZISDB	MSSQLSERVER	Route REVA	1	Elk uur tem 31/08/2022	0	Daily	Every 1 day(s)	 every 1 hours starting at 06:00:00
+OAZISDB	MSSQLSERVER	sp_delete_backuphistory	1		0	No Schedule		
+OAZISDB	MSSQLSERVER	sp_purge_jobhistory	1	Dagelijks - 00:30	0	Daily	Every 1 day(s)	 starting at 00:30:00
+OAZISDB	MSSQLSERVER	syspolicy_purge_history	1	syspolicy_purge_history_schedule	0	Daily	Every 1 day(s)	 starting at 02:00:00
+OAZISDB	MSSQLSERVER	Update adres Boonen PID 0047489	1	Dagelijks - 22:30	0	Daily	Every 1 day(s)	 starting at 22:30:00
+OAZISDB	MSSQLSERVER	Update Routes	0	Dagelijks	0	Daily	Every 1 day(s)	 starting at 06:00:00
+OAZISDB	MSSQLSERVER	Vrijgeven 1957 ECS20	1	Vandaag	0	Daily	Every 1 day(s)	 every 10 minutes starting at 07:00:00
